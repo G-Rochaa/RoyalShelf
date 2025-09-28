@@ -2,7 +2,7 @@
 {
     public class Livro
     {
-        public Guid Id { get; private set; }
+        public int Id { get; private set; }
         public string Titulo { get; private set; } = string.Empty;
         public string Autor { get; private set; } = string.Empty;
         public string Isbn { get; private set; } = string.Empty;

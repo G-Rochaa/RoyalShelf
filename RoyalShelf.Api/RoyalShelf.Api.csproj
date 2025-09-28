@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RoyalShelf.Application\RoyalShelf.Application.csproj" />
+    <ProjectReference Include="..\RoyalShelf.Infrastructure\RoyalShelf.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
